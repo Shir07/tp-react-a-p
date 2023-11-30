@@ -1,0 +1,79 @@
+body{
+    background-color: #17181f;
+    color: #ddd;
+}
+*{
+    box-sizing: border-box;
+}
+main{
+    max-width: 400px;
+    margin: 100px auto;
+}
+form{
+    border: 3px solid #e82abb;
+    border-radius: 10px;
+    padding: 5px;
+    display:flex;
+}
+form input[type="text"] {
+    background: none;
+    color:#fff;
+    border:0;
+    padding: 0 8px;
+    display:block;
+    width: 100%;
+}
+form button{
+    background-color: #ff9a2e;
+    border:10;
+    border-radius: 6px;
+    cursor:pointer;
+}
+
+div.task{
+    background-color: #30313D;
+    border-radius: 10px;
+    padding: 10px 9px;
+    margin-top: 5px;
+    display:flex;
+    align-items: center;
+    transition: opacity .3s linear;
+}
+
+div.task.hecho{
+    opacity: 0.3;
+}
+div.task-name, div.task form{
+    flex-grow:1;
+}
+
+
+h1, h2{
+    text-align: center;
+}
+
+div.checkbox{
+    display:flex;
+    align-items: center;
+}
+
+div.task svg{
+    height: 22px;
+    margin-right: 6px;
+    fill: #bfff2e;
+}
+
+/*tachito*/
+button.trash svg{
+    fill: #ff2e2e;
+    height: 16px;
+}
+
+
+
+button.trash{
+    background:none;
+    border:none;
+    display:flex;
+    cursor:pointer;
+}
